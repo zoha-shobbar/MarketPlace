@@ -27,7 +27,7 @@ namespace MarketPlace.Domain.Entities
         public bool? AllowComment { get; set; }
 
         public virtual ICollection<Gallery> Products { get; set; }
-
+          
         public enum PagePublishSatus
         {
             Published,
