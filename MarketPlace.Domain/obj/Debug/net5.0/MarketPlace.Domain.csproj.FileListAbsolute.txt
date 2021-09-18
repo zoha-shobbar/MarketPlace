@@ -1,0 +1,12 @@
+E:\Projects\MarketPlace\MarketPlace.Domain\obj\Debug\net5.0\MarketPlace.Domain.csproj.AssemblyReference.cache
+E:\Projects\MarketPlace\MarketPlace.Domain\obj\Debug\net5.0\MarketPlace.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\MarketPlace\MarketPlace.Domain\obj\Debug\net5.0\MarketPlace.Domain.AssemblyInfoInputs.cache
+E:\Projects\MarketPlace\MarketPlace.Domain\obj\Debug\net5.0\MarketPlace.Domain.AssemblyInfo.cs
+E:\Projects\MarketPlace\MarketPlace.Domain\obj\Debug\net5.0\MarketPlace.Domain.csproj.CoreCompileInputs.cache
+E:\Projects\MarketPlace\MarketPlace.Domain\bin\Debug\net5.0\MarketPlace.Domain.deps.json
+E:\Projects\MarketPlace\MarketPlace.Domain\bin\Debug\net5.0\MarketPlace.Domain.dll
+E:\Projects\MarketPlace\MarketPlace.Domain\bin\Debug\net5.0\ref\MarketPlace.Domain.dll
+E:\Projects\MarketPlace\MarketPlace.Domain\bin\Debug\net5.0\MarketPlace.Domain.pdb
+E:\Projects\MarketPlace\MarketPlace.Domain\obj\Debug\net5.0\MarketPlace.Domain.dll
+E:\Projects\MarketPlace\MarketPlace.Domain\obj\Debug\net5.0\ref\MarketPlace.Domain.dll
+E:\Projects\MarketPlace\MarketPlace.Domain\obj\Debug\net5.0\MarketPlace.Domain.pdb
