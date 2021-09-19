@@ -42,6 +42,9 @@
     <Folder Include="Features\PageAndPosts\Commands\CreatePageAndPost\" />
     <Folder Include="Features\PageAndPosts\Commands\DeletePageAndPost\" />
     <Folder Include="Features\PageAndPosts\Commands\UpdatePageAndPost\" />
+    <Folder Include="Features\ProductCategories\Commands\CreateProductCategory\" />
+    <Folder Include="Features\ProductCategories\Commands\DeleteProductCategory\" />
+    <Folder Include="Features\ProductCategories\Commands\UpdateProductCategory\" />
     <Folder Include="Features\Products\Commands\Create\" />
     <Folder Include="Features\Products\Commands\Delete\" />
     <Folder Include="Features\Products\Commands\Update\" />
