@@ -23,7 +23,6 @@ namespace MarketPlace.Application.Profiles
         {
             CreateMap<Comment, CommentDetailViewModel>().ReverseMap();
 
-
             CreateMap<Country, CountryDTO>().ReverseMap();
             CreateMap<Country, CountryListViewModel>().ReverseMap();
 

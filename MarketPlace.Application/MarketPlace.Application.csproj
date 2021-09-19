@@ -19,6 +19,9 @@
     <Folder Include="Features\Galleries\Commands\CreateGallery\" />
     <Folder Include="Features\Galleries\Commands\DeleteGallery\" />
     <Folder Include="Features\Galleries\Commands\UpdateGallery\" />
+    <Folder Include="Features\Languages\Commands\CreateLanguage\" />
+    <Folder Include="Features\Languages\Commands\DeleteLanguage\" />
+    <Folder Include="Features\Languages\Commands\UpdateLanguage\" />
     <Folder Include="Features\Menues\Commands\CreateMenu\" />
     <Folder Include="Features\Menues\Commands\DeleteMenu\" />
     <Folder Include="Features\Menues\Commands\UpdateMenu\" />
