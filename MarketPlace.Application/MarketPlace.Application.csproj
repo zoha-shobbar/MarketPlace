@@ -19,17 +19,9 @@
     <Folder Include="Features\Galleries\Commands\CreateGallery\" />
     <Folder Include="Features\Galleries\Commands\DeleteGallery\" />
     <Folder Include="Features\Galleries\Commands\UpdateGallery\" />
-    <Folder Include="Features\Languages\Commands\CreateLanguage\" />
-    <Folder Include="Features\Languages\Commands\DeleteLanguage\" />
-    <Folder Include="Features\Languages\Commands\UpdateLanguage\" />
     <Folder Include="Features\Menues\Commands\CreateMenu\" />
     <Folder Include="Features\Menues\Commands\DeleteMenu\" />
     <Folder Include="Features\Menues\Commands\UpdateMenu\" />
-    <Folder Include="Features\Comments - Copy\Commands\Create\" />
-    <Folder Include="Features\Comments - Copy\Commands\Delete\" />
-    <Folder Include="Features\Comments - Copy\Commands\Update\" />
-    <Folder Include="Features\Comments - Copy\Queries\Get_Detail\" />
-    <Folder Include="Features\Comments - Copy\Queries\Get_List\" />
     <Folder Include="Features\Comments\Commands\CreateComment\" />
     <Folder Include="Features\Comments\Commands\DeleteComment\" />
     <Folder Include="Features\Comments\Commands\UpdateComment\" />

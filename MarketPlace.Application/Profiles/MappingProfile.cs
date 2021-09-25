@@ -7,10 +7,15 @@ using MarketPlace.Application.Features.Currencies.Queries.GetCurrencyDetail;
 using MarketPlace.Application.Features.Currencies.Queries.GetCurrencyListWithCountries;
 using MarketPlace.Application.Features.Galleries.Queries.GetGalleriesList;
 using MarketPlace.Application.Features.Galleries.Queries.GetGalleryDetail;
+using MarketPlace.Application.Features.Languages.Commands.CreateLanguage;
+using MarketPlace.Application.Features.Languages.Commands.UpdateLanguage;
+using MarketPlace.Application.Features.Languages.Queries.GetLanguageDetail;
+using MarketPlace.Application.Features.Languages.Queries.GetLanguagesList;
 using MarketPlace.Application.Features.Menues.Queries.GetMenuDetail;
 using MarketPlace.Application.Features.Menues.Queries.GetMenueByType;
 using MarketPlace.Application.Features.Menues.Queries.GetMenuList;
 using MarketPlace.Application.Features.PageAndPosts.Queries.GetPageAndPostDetail;
+using MarketPlace.Application.Features.ProductCategories.Queries.GetProductCategoriesList;
 using MarketPlace.Application.Features.Products.Queries.GetProductDetail;
 using MarketPlace.Application.Features.Products.Queries.GetProductList;
 using MarketPlace.Domain.Entities;
@@ -35,12 +40,22 @@ namespace MarketPlace.Application.Profiles
             CreateMap<Gallery, GalleryDetailViewModel>().ReverseMap();
             CreateMap<Gallery, GalleryListViewModel>().ReverseMap();
 
+            CreateMap<Language, LanguageDTO>().ReverseMap();
+            CreateMap<Language, LanguageDetailViewModel>().ReverseMap();
+            CreateMap<Language, LanguageListViewModel>().ReverseMap();
+            CreateMap<Language, CreateLanguageCommand>().ReverseMap();
+            CreateMap<Language, UpdateLanguageCommand>().ReverseMap();
+
             CreateMap<Menu, MenuDetailViewModel>().ReverseMap();
             CreateMap<Menu, MenuListViewModel>().ReverseMap();
             CreateMap<Menu, MenuByTypeViewModel>().ReverseMap();
 
             CreateMap<PageAndPost, PageAndPostDTO>().ReverseMap();
             CreateMap<PageAndPost, PageAndPostDetailViewModel>().ReverseMap();
+
+            CreateMap<Product, ProductCategoryDTO>().ReverseMap();
+            CreateMap<Product, >().ReverseMap();
+            CreateMap<Product, ProductCategoryListViewModel>().ReverseMap();
 
             CreateMap<Product, ProductDTO>().ReverseMap();
             CreateMap<Product, ProductDetailViewModel>().ReverseMap();
