@@ -1,10 +1,9 @@
-﻿using MarketPlace.Domain.Common;
+﻿using MediatR;
 using System;
-using System.Collections.Generic;
 
-namespace MarketPlace.Domain.Entities
+namespace MarketPlace.Application.Features.Comments.Commands.CreateComment
 {
-    public class Comment : AuditableEntity
+    public class CreateCommentCommand : IRequest<Guid>
     {
         public Guid CommentId { get; set; }
 
@@ -16,18 +15,17 @@ namespace MarketPlace.Domain.Entities
 
         public bool? IsConfirmed { get; set; }
 
-        public Comment? ReplyComment { get; set; }
         public Guid? ReplyCommentId { get; set; }
 
-        public PageAndPost PageAndPost { get; set; }
         public Guid PageAndPostId { get; set; }
 
-
-        public Product Product { get; set; }
         public Guid ProductId { get; set; }
 
         public string UserId { get; set; }
 
-        public virtual ICollection<Comment> Comments { get; set; }
+        //public override string ToString()
+        //{
+        //    return $"language :{Title};Short Title:{ShortTitle},Title With Orginal Language:{TitleWithOrginalLanguage}";
+        //}
     }
 }
