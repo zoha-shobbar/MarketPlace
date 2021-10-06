@@ -2,6 +2,9 @@
 using MarketPlace.Application.DTOs;
 using MarketPlace.Application.Features.Comments.Commands.CreateComment;
 using MarketPlace.Application.Features.Comments.Queries.GetCommentDetail;
+using MarketPlace.Application.Features.Comments.Queries.GetCommentsList;
+using MarketPlace.Application.Features.Comments.Queries.GetCommentsListByPageId;
+using MarketPlace.Application.Features.Comments.Queries.GetCommentsListByProductId;
 using MarketPlace.Application.Features.Countries.Commands.CreateCountry;
 using MarketPlace.Application.Features.Countries.Queries.GetCountriesList;
 using MarketPlace.Application.Features.Currencies.Commands.CreateCurrency;
@@ -34,6 +37,10 @@ namespace MarketPlace.Application.Profiles
         public MappingProfile()
         {
             CreateMap<Comment, CommentDetailViewModel>().ReverseMap();
+            CreateMap<Comment, CommentListViewModel>().ReverseMap();
+            CreateMap<Comment, CommentListByPageIdViewModel>().ReverseMap();
+            CreateMap<Comment, CommentListByProductIdViewModel>().ReverseMap();
+
 
             CreateMap<Country, CountryDTO>().ReverseMap();
             CreateMap<Country, CountryListViewModel>().ReverseMap();

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MarketPlace.Application.Features.Comments.Queries.GetCommentsListByPageId
 {
-    public class GetCommentListHandler : IRequestHandler<GetCommentListQuery, List<CommentListViewModel>>
+    public class GetCommentListHandler : IRequestHandler<GetCommentListQuery, List<CommentListByPageIdViewModel>>
     {
         private readonly IMapper _mapper;
         private readonly ICommentRepository _commentRepository;
@@ -18,10 +18,10 @@ namespace MarketPlace.Application.Features.Comments.Queries.GetCommentsListByPag
             _mapper = mapper;
             _commentRepository = commentRepository;
         }
-        public async Task<List<CommentListViewModel>> Handle(GetCommentListQuery request, CancellationToken cancellationToken)
+        public async Task<List<CommentListByPageIdViewModel>> Handle(GetCommentListQuery request, CancellationToken cancellationToken)
         {
             var productComments = (await _commentRepository.GetByPageIdAsync(request.PageId)).OrderBy(x => x.CreatedDate);
-            return _mapper.Map<List<CommentListViewModel>>(productComments);
+            return _mapper.Map<List<CommentListByPageIdViewModel>>(productComments);
         }
     }
 }

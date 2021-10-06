@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace MarketPlace.Application.Features.Comments.Queries.GetCommentsListByPageId
+namespace MarketPlace.Application.Features.Comments.Queries.GetCommentsListByProductId
 {
-    public class CommentListViewModel
+    public class CommentListByProductIdViewModel
     {
         public Guid CommentId { get; set; }
 

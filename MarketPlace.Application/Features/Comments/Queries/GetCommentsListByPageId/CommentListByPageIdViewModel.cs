@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace MarketPlace.Application.Features.Comments.Queries.GetCommentsListByProductId
+namespace MarketPlace.Application.Features.Comments.Queries.GetCommentsListByPageId
 {
-    public class CommentListViewModel
+    public class CommentListByPageIdViewModel
     {
         public Guid CommentId { get; set; }
 
@@ -15,6 +15,8 @@ namespace MarketPlace.Application.Features.Comments.Queries.GetCommentsListByPro
         public bool? IsConfirmed { get; set; }
 
         public DateTime CreatedDate { get; set; }
+
+        public Guid PageAndPostId { get; set; }
 
     }
 }
