@@ -26,6 +26,8 @@ using MarketPlace.Application.Features.PageAndPosts.Commands.CreatePageAndPost;
 using MarketPlace.Application.Features.PageAndPosts.Queries.GetPageAndPostDetail;
 using MarketPlace.Application.Features.ProductCategories.Commands.CreateProductCategory;
 using MarketPlace.Application.Features.ProductCategories.Queries.GetProductCategoriesList;
+using MarketPlace.Application.Features.ProductCategories.Queries.GetProductCategoryDetail;
+using MarketPlace.Application.Features.Products.Commands.CreateProducts;
 using MarketPlace.Application.Features.Products.Queries.GetProductDetail;
 using MarketPlace.Application.Features.Products.Queries.GetProductList;
 using MarketPlace.Domain.Entities;
@@ -40,19 +42,23 @@ namespace MarketPlace.Application.Profiles
             CreateMap<Comment, CommentListViewModel>().ReverseMap();
             CreateMap<Comment, CommentListByPageIdViewModel>().ReverseMap();
             CreateMap<Comment, CommentListByProductIdViewModel>().ReverseMap();
+            CreateMap<Comment, CreateCommentCommand>().ReverseMap();
 
 
             CreateMap<Country, CountryDTO>().ReverseMap();
             CreateMap<Country, CountryListViewModel>().ReverseMap();
+            CreateMap<Country, CreateCountryCommand>().ReverseMap();
 
             CreateMap<Currency, CurrencyDTO>().ReverseMap();
             CreateMap<Currency, CurrenciesListViewModel>().ReverseMap();
             CreateMap<Currency, CurrencyDetailViewModel>().ReverseMap();
             CreateMap<Currency, CurrencyCountryListViewModel>().ReverseMap();
+            CreateMap<Currency, CreateCurrencyCommand>().ReverseMap();
 
             CreateMap<Gallery, GalleryDTO>().ReverseMap();
             CreateMap<Gallery, GalleryDetailViewModel>().ReverseMap();
             CreateMap<Gallery, GalleryListViewModel>().ReverseMap();
+            CreateMap<Gallery, CreateGalleryCommand>().ReverseMap();
 
             CreateMap<Language, LanguageDTO>().ReverseMap();
             CreateMap<Language, LanguageDetailViewModel>().ReverseMap();
@@ -63,17 +69,21 @@ namespace MarketPlace.Application.Profiles
             CreateMap<Menu, MenuDetailViewModel>().ReverseMap();
             CreateMap<Menu, MenuListViewModel>().ReverseMap();
             CreateMap<Menu, MenuByTypeViewModel>().ReverseMap();
+            CreateMap<Menu, CreateMenuCommand>().ReverseMap();
 
             CreateMap<PageAndPost, PageAndPostDTO>().ReverseMap();
             CreateMap<PageAndPost, PageAndPostDetailViewModel>().ReverseMap();
+            CreateMap<PageAndPost, CreatePageAndPostCommand>().ReverseMap();
 
-            CreateMap<Product, ProductCategoryDTO>().ReverseMap();
-            CreateMap<Product, >().ReverseMap();
-            CreateMap<Product, ProductCategoryListViewModel>().ReverseMap();
+            CreateMap<ProductCategory, ProductCategoryDTO>().ReverseMap();
+            CreateMap<ProductCategory, ProductCategoryDetailViewModel>().ReverseMap();
+            CreateMap<ProductCategory, ProductCategoryListViewModel>().ReverseMap();
+            CreateMap<ProductCategory, CreateProductCategoryCommand>().ReverseMap();
 
             CreateMap<Product, ProductDTO>().ReverseMap();
             CreateMap<Product, ProductDetailViewModel>().ReverseMap();
             CreateMap<Product, ProductsListViewModel>().ReverseMap();
+            CreateMap<Product, CreateProductCommand>().ReverseMap();
 
         }
     }
