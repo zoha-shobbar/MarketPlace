@@ -16,21 +16,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Galleries\Commands\DeleteGallery\" />
     <Folder Include="Features\Galleries\Commands\UpdateGallery\" />
-    <Folder Include="Features\Menues\Commands\DeleteMenu\" />
     <Folder Include="Features\Menues\Commands\UpdateMenu\" />
-    <Folder Include="Features\Comments\Commands\DeleteComment\" />
     <Folder Include="Features\Comments\Commands\UpdateComment\" />
-    <Folder Include="Features\Countries\Commands\DeleteCountry\" />
     <Folder Include="Features\Countries\Commands\UpdateCountry\" />
-    <Folder Include="Features\Currencies\Commands\DeleteCurrency\" />
     <Folder Include="Features\Currencies\Commands\UpdateCurrency\" />
-    <Folder Include="Features\PageAndPosts\Commands\DeletePageAndPost\" />
     <Folder Include="Features\PageAndPosts\Commands\UpdatePageAndPost\" />
-    <Folder Include="Features\ProductCategories\Commands\DeleteProductCategory\" />
     <Folder Include="Features\ProductCategories\Commands\UpdateProductCategory\" />
-    <Folder Include="Features\Products\Commands\DeleteProducts\" />
     <Folder Include="Features\Products\Commands\UpdateProducts\" />
   </ItemGroup>
 
