@@ -16,12 +16,12 @@ namespace MarketPlace.Application.Features.Galleries.Queries.GetGalleryDetail
         private readonly IAsyncRepository<Product> _productRepository;
         private readonly IMapper _mapper;
 
-        public GetGalleryDetailQueryHandler(IMapper mapper, IAsyncRepository<Gallery> eventRepository,
+        public GetGalleryDetailQueryHandler(IMapper mapper, IAsyncRepository<Gallery> galleryRepository,
                                                             IAsyncRepository<PageAndPost> pageAndPostRepository,
                                                             IAsyncRepository<Product> productRepository)
         {
             _mapper = mapper;
-            _galleryRepository = eventRepository;
+            _galleryRepository = galleryRepository;
             _pageAndPostRepository = pageAndPostRepository;
             _productRepository = productRepository;
         }

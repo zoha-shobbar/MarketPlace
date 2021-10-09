@@ -13,7 +13,7 @@ namespace MarketPlace.Domain.Entities
 
         public string FileExtention { get; set; }
 
-        public string FileSize { get; set; }
+        public float FileSize { get; set; }
 
         public bool? IsMasterImage { get; set; }
 

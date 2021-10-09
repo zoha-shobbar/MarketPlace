@@ -7,6 +7,7 @@ namespace MarketPlace.Domain.Entities
     public class Language : AuditableEntity
     {
         public Guid LanguageId { get; set; }
+    
         public string ShortTitle { get; set; }
 
         public string Title { get; set; }

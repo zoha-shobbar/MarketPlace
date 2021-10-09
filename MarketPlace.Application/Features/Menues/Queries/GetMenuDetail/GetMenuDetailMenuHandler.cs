@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 namespace MarketPlace.Application.Features.Menues.Queries.GetMenuDetail
 
 {
-    public class GetMenuDetailEventHandler : IRequestHandler<GetMenuDetailQuery, MenuDetailViewModel>
+    public class GetMenuDetailMenuHandler : IRequestHandler<GetMenuDetailQuery, MenuDetailViewModel>
     {
         private readonly IAsyncRepository<Menu> _menuRepository;
         private IMapper _mapper;
-        public GetMenuDetailEventHandler(IMapper mapper, IAsyncRepository<Menu> menuRepository)
+        public GetMenuDetailMenuHandler(IMapper mapper, IAsyncRepository<Menu> menuRepository)
         {
             _menuRepository = menuRepository;
             _mapper = mapper;

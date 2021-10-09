@@ -10,29 +10,29 @@ using System.Threading.Tasks;
 namespace MarketPlace.Application.Features.Products.Queries.GetProductDetail
 
 {
-    public class GetEventDetailQueryHandler : IRequestHandler<GetEventDetailQuery, ProductDetailViewModel>
+    public class GetProductDetailQueryHandler : IRequestHandler<GetProductDetailQuery , ProductDetailViewModel>
     {
-        private readonly IAsyncRepository<Product> _eventRepository;
+        private readonly IAsyncRepository<Product> _productRepository;
         private readonly IAsyncRepository<Currency> _currencyRepository;
         private readonly IAsyncRepository<Country> _countryRepository;
         private readonly IAsyncRepository<ProductCategory> _productCategoryRepository;
         private readonly IMapper _mapper;
 
-        public GetEventDetailQueryHandler(IMapper mapper, IAsyncRepository<Product> productRepository,
+        public GetProductDetailQueryHandler(IMapper mapper, IAsyncRepository<Product> productRepository,
                                                         IAsyncRepository<Currency> currencyRepository,
                                                         IAsyncRepository<Country> countryRepository,
                                                         IAsyncRepository<ProductCategory> productCategoryRepository)
         {
             _mapper = mapper;
-            _eventRepository = productRepository;
+            _productRepository = productRepository;
             _currencyRepository = currencyRepository;
             _countryRepository = countryRepository;
             _productCategoryRepository = productCategoryRepository;
         }
 
-        public async Task<ProductDetailViewModel> Handle(GetEventDetailQuery request, CancellationToken cancellationToken)
+        public async Task<ProductDetailViewModel> Handle(GetProductDetailQuery  request, CancellationToken cancellationToken)
         {
-            var @product = await _eventRepository.GetByIdAsync(request.Id);
+            var @product = await _productRepository.GetByIdAsync(request.Id);
             var productDetailDto = _mapper.Map<ProductDetailViewModel>(product);
 
             var currency = await _currencyRepository.GetByIdAsync((Guid)@product.CurrencyId);

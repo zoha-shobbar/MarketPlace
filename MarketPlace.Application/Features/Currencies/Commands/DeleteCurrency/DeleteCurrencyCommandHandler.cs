@@ -9,25 +9,25 @@ namespace MarketPlace.Application.Features.Currencies.Commands.DeleteCurrency
 {
     public class DeleteCurrencyCommandHandler : IRequestHandler<DeleteCurrencyCommand>
     {
-        private readonly IAsyncRepository<Currency> _eventRepository;
+        private readonly IAsyncRepository<Currency> _currencyyRepository;
         private readonly IMapper _mapper;
 
-        public DeleteCurrencyCommandHandler(IMapper mapper, IAsyncRepository<Currency> eventRepository)
+        public DeleteCurrencyCommandHandler(IMapper mapper, IAsyncRepository<Currency> currencyRepository)
         {
             _mapper = mapper;
-            _eventRepository = eventRepository;
+            _currencyyRepository = currencyRepository;
         }
 
         public async Task<Unit> Handle(DeleteCurrencyCommand request, CancellationToken cancellationToken)
         {
-            var eventToDelete = await _eventRepository.GetByIdAsync(request.CurrencyId);
+            var currencyToDelete = await _currencyyRepository.GetByIdAsync(request.CurrencyId);
 
-            if (eventToDelete == null)
+            if (currencyToDelete == null)
             {
                 throw new NotFoundException(nameof(Currency), request.CurrencyId);
             }
 
-            await _eventRepository.DeleteAsync(eventToDelete);
+            await _currencyyRepository.DeleteAsync(currencyToDelete);
 
             return Unit.Value;
         }

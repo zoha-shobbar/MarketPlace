@@ -24,7 +24,7 @@ namespace MarketPlace.Domain.Entities
 
         public bool? IsPage { get; set; }
 
-        public bool? AllowComment { get; set; }
+        public bool AllowComment { get; set; }
 
         public virtual ICollection<Gallery> Products { get; set; }
           

@@ -11,19 +11,10 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="FluentValidation" Version="10.3.3" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.3.3" />
     <PackageReference Include="MediatR" Version="9.0.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Features\Galleries\Commands\UpdateGallery\" />
-    <Folder Include="Features\Menues\Commands\UpdateMenu\" />
-    <Folder Include="Features\Comments\Commands\UpdateComment\" />
-    <Folder Include="Features\Countries\Commands\UpdateCountry\" />
-    <Folder Include="Features\Currencies\Commands\UpdateCurrency\" />
-    <Folder Include="Features\PageAndPosts\Commands\UpdatePageAndPost\" />
-    <Folder Include="Features\ProductCategories\Commands\UpdateProductCategory\" />
-    <Folder Include="Features\Products\Commands\UpdateProducts\" />
   </ItemGroup>
 
 </Project>

@@ -12,14 +12,14 @@ namespace MarketPlace.Application.Features.Products.Queries.GetProductList
         
         public string URL { get; set; }
 
-        public int? Price { get; set; }
+        public decimal? Price { get; set; }
 
         public int? Quantity { get; set; }
 
         public string SerialNum { get; set; }
 
-        public int? PurchasePrice { get; set; }
+        public decimal? PurchasePrice { get; set; }
 
-        public int? SpecialSellPrice { get; set; }
+        public decimal? SpecialSellPrice { get; set; }
     }
 }

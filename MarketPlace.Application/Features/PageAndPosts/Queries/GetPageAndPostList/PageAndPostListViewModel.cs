@@ -19,6 +19,6 @@ namespace MarketPlace.Application.Features.PageAndPosts.Queries.GetPageAndPostLi
 
         public bool? IsPage { get; set; }
 
-        public bool? AllowComment { get; set; }
+        public bool AllowComment { get; set; }
     }
 }

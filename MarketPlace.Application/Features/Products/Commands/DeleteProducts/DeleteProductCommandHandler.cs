@@ -9,25 +9,25 @@ namespace MarketPlace.Application.Features.Products.Commands.DeleteProducts
 {
     public class DeleteProductCommandHandler : IRequestHandler<DeleteProductCommand>
     {
-        private readonly IAsyncRepository<Product> _eventRepository;
+        private readonly IAsyncRepository<Product> _productRepository;
         private readonly IMapper _mapper;
 
         public DeleteProductCommandHandler(IMapper mapper, IAsyncRepository<Product> productRepository)
         {
             _mapper = mapper;
-            _eventRepository = productRepository;
+            _productRepository = productRepository;
         }
 
         public async Task<Unit> Handle(DeleteProductCommand request, CancellationToken cancellationToken)
         {
-            var eventToDelete = await _eventRepository.GetByIdAsync(request.ProductId);
+            var productToDelete = await _productRepository.GetByIdAsync(request.ProductId);
 
-            if (eventToDelete == null)
+            if (productToDelete == null)
             {
                 throw new NotFoundException(nameof(Product), request.ProductId);
             }
 
-            await _eventRepository.DeleteAsync(eventToDelete);
+            await _productRepository.DeleteAsync(productToDelete);
 
             return Unit.Value;
         }

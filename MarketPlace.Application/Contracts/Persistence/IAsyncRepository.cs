@@ -12,5 +12,7 @@ namespace MarketPlace.Application.Contracts.Persistence
         Task<T> UpdateAsync(T entity);
         Task<T> DeleteAsync(T entity);
         Task GetByIdAsync(object currency);
+        Task<bool> IsGuidEmpty(Guid guid);
+
     }
 }

@@ -24,7 +24,7 @@ namespace MarketPlace.Application.Features.PageAndPosts.Queries.GetPageAndPostDe
 
         public bool? IsPage { get; set; }
 
-        public bool? AllowComment { get; set; }
+        public bool AllowComment { get; set; }
 
         public string CreatedBy { get; set; }
         

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MarketPlace.Application.DTOs;
+using System;
 
 namespace MarketPlace.Application.Features.Comments.Queries.GetCommentDetail
 {
@@ -16,10 +17,10 @@ namespace MarketPlace.Application.Features.Comments.Queries.GetCommentDetail
 
         public bool? IsConfirmed { get; set; }
 
-        public PageAndPostDTO PageAndPost { get; set; }
-        public Guid PageAndPostId { get; set; }
+        public PageAndPostDTO? PageAndPost { get; set; }
+        public Guid? PageAndPostId { get; set; }
 
-        public ProductDTO Product { get; set; }
-        public Guid ProductId { get; set; }
+        public ProductDTO? Product { get; set; }
+        public Guid? ProductId { get; set; }
     }
 }

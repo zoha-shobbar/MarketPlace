@@ -20,11 +20,11 @@ namespace MarketPlace.Application.Features.Comments.Commands.DeleteComment
 
         public async Task<Unit> Handle(DeleteCommentCommand request, CancellationToken cancellationToken)
         {
-            var commentToDelete = await _commentRepository.GetByIdAsync(request.EventId);
+            var commentToDelete = await _commentRepository.GetByIdAsync(request.CommentId);
 
             if (commentToDelete == null)
             {
-                throw new NotFoundException(nameof(Comment), request.EventId);
+                throw new NotFoundException(nameof(Comment), request.CommentId);
             }
 
             await _commentRepository.DeleteAsync(commentToDelete);

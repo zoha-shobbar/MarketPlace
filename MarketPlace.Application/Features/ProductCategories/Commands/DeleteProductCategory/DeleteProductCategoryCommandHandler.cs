@@ -20,14 +20,14 @@ namespace MarketPlace.Application.Features.ProductCategories.Commands.DeleteProd
 
         public async Task<Unit> Handle(DeleteProductCategoryCommand request, CancellationToken cancellationToken)
         {
-            var eventToDelete = await _productCategoryRepository.GetByIdAsync(request.ProductCategoryId);
+            var productCategoryToDelete = await _productCategoryRepository.GetByIdAsync(request.ProductCategoryId);
 
-            if (eventToDelete == null)
+            if (productCategoryToDelete == null)
             {
                 throw new NotFoundException(nameof(ProductCategory), request.ProductCategoryId);
             }
 
-            await _productCategoryRepository.DeleteAsync(eventToDelete);
+            await _productCategoryRepository.DeleteAsync(productCategoryToDelete);
 
             return Unit.Value;
         }

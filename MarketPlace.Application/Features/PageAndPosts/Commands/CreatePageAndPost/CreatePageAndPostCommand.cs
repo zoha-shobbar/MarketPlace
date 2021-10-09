@@ -23,7 +23,7 @@ namespace MarketPlace.Application.Features.PageAndPosts.Commands.CreatePageAndPo
 
         public bool? IsPage { get; set; }
 
-        public bool? AllowComment { get; set; }
+        public bool AllowComment { get; set; }
 
         //public override string ToString()
         //{

@@ -19,12 +19,12 @@ namespace MarketPlace.Domain.Entities
         public Comment? ReplyComment { get; set; }
         public Guid? ReplyCommentId { get; set; }
 
-        public PageAndPost PageAndPost { get; set; }
-        public Guid PageAndPostId { get; set; }
+        public PageAndPost? PageAndPost { get; set; }
+        public Guid? PageAndPostId { get; set; }
 
 
-        public Product Product { get; set; }
-        public Guid ProductId { get; set; }
+        public Product? Product { get; set; }
+        public Guid? ProductId { get; set; }
 
         public string UserId { get; set; }
 

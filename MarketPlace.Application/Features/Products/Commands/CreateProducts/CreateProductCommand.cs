@@ -15,33 +15,33 @@ namespace MarketPlace.Application.Features.Products.Commands.CreateProducts
 
         public string Description { get; set; }
 
-        public int? Price { get; set; }
+        public decimal Price { get; set; }
 
-        public int? Quantity { get; set; }
+        public int Quantity { get; set; }
 
         public string SerialNum { get; set; }
 
-        public int? PurchasePrice { get; set; }
+        public decimal? PurchasePrice { get; set; }
 
-        public int? SpecialSellPrice { get; set; }
+        public decimal? SpecialSellPrice { get; set; }
 
-        public bool? CellarManagment { get; set; }
+        public bool CellarManagment { get; set; }
 
         public string Inventory { get; set; }
 
-        public int? LowInventoryThreshold { get; set; }
+        public decimal? LowInventoryThreshold { get; set; }
 
         public double? Weight { get; set; }
 
-        public string Dimensions { get; set; }
+        public string? Dimensions { get; set; }
 
-        public string CrossSells { get; set; }
+        public string? CrossSells { get; set; }
 
-        public bool? ForMoreSell { get; set; }
+        public bool ForMoreSell { get; set; }
 
-        public byte? PublishStatus { get; set; }
+        public byte PublishStatus { get; set; }
 
-        public bool? AllowComment { get; set; }
+        public bool AllowComment { get; set; }
 
         public Guid? CurrencyId { get; set; }
 

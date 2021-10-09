@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace MarketPlace.Application.Features.PageAndPosts.Queries.GetPageAndPostList
 {
-    public class GetEventsListQueryHandler : IRequestHandler<PageAndPostsListQuery, List<PageAndPostListViewModel>>
+    public class GetPageAndPostsListQueryHandler : IRequestHandler<PageAndPostsListQuery, List<PageAndPostListViewModel>>
     {
         private readonly IAsyncRepository<PageAndPost> _pageAndPostRepository;
         private readonly IMapper _mapper;
 
-        public GetEventsListQueryHandler(IMapper mapper, IAsyncRepository<PageAndPost> pageAndPostRepository)
+        public GetPageAndPostsListQueryHandler(IMapper mapper, IAsyncRepository<PageAndPost> pageAndPostRepository)
         {
             _mapper = mapper;
             _pageAndPostRepository = pageAndPostRepository;

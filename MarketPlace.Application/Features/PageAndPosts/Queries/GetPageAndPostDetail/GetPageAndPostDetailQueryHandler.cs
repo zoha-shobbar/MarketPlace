@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MarketPlace.Application.Contracts.Persistence;
+using MarketPlace.Application.DTOs;
 using MarketPlace.Domain.Entities;
 using MediatR;
 using System.Collections.Generic;
@@ -31,7 +32,7 @@ namespace MarketPlace.Application.Features.PageAndPosts.Queries.GetPageAndPostDe
 
             if (gallery == null)
             {
-                //throw new NotFoundException(nameof(Event), request.Id);
+                throw new NotFoundException(nameof(PageAndPost), request.Id);
             }
             pageAndPostDetailDto.Gallery = _mapper.Map<List<GalleryDTO>>(gallery);
 

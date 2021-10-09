@@ -8,6 +8,7 @@ namespace MarketPlace.Domain.Entities
    public class ProductCategory: AuditableEntity
     {
         public Guid ProductCategoryId { get; set; }
+        
         public string Title { get; set; }
 
         public string ShorTitle { get; set; }

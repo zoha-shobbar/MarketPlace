@@ -14,10 +14,10 @@ namespace MarketPlace.Application.Features.Languages.Queries.GetLanguagesList
         private readonly IAsyncRepository<Language> _languageRepository;
         private readonly IMapper _mapper;
 
-        public GetLanguagesListQueryHandler(IMapper mapper, IAsyncRepository<Language> eventRepository)
+        public GetLanguagesListQueryHandler(IMapper mapper, IAsyncRepository<Language> languageRepository)
         {
             _mapper = mapper;
-            _languageRepository = eventRepository;
+            _languageRepository = languageRepository;
         }
 
         public async Task<List<LanguageListViewModel>> Handle(GetLanguagesListQuery request, CancellationToken cancellationToken)

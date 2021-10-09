@@ -11,7 +11,7 @@ namespace MarketPlace.Application.Features.Galleries.Queries.GetGalleriesList
 
         public string FileExtention { get; set; }
 
-        public string FileSize { get; set; }
+        public float FileSize { get; set; }
 
         public PageAndPostDTO? PageAndPost { get; set; }
         public Guid? PageAndPostId { get; set; }

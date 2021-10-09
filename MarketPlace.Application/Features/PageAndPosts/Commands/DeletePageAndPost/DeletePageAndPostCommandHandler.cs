@@ -20,14 +20,14 @@ namespace MarketPlace.Application.Features.PageAndPosts.Commands.DeletePageAndPo
 
         public async Task<Unit> Handle(DeletePageAndPostCommand request, CancellationToken cancellationToken)
         {
-            var eventToDelete = await _pageAndPostRepository.GetByIdAsync(request.PageAndPostId);
+            var pageAndPostToDelete = await _pageAndPostRepository.GetByIdAsync(request.PageAndPostId);
 
-            if (eventToDelete == null)
+            if (pageAndPostToDelete == null)
             {
                 throw new NotFoundException(nameof(PageAndPost), request.PageAndPostId);
             }
 
-            await _pageAndPostRepository.DeleteAsync(eventToDelete);
+            await _pageAndPostRepository.DeleteAsync(pageAndPostToDelete);
 
             return Unit.Value;
         }

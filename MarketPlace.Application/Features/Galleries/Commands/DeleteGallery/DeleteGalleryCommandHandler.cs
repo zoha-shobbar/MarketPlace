@@ -9,25 +9,25 @@ namespace MarketPlace.Application.Features.Galleries.Commands.DeleteGallery
 {
     public class DeleteGalleryCommandHandler : IRequestHandler<DeleteGalleryCommand>
     {
-        private readonly IAsyncRepository<Gallery> _eventRepository;
+        private readonly IAsyncRepository<Gallery> _galleryRepository;
         private readonly IMapper _mapper;
 
         public DeleteGalleryCommandHandler(IMapper mapper, IAsyncRepository<Gallery> galleryRepository)
         {
             _mapper = mapper;
-            _eventRepository = galleryRepository;
+            _galleryRepository = galleryRepository;
         }
 
         public async Task<Unit> Handle(DeleteGalleryCommand request, CancellationToken cancellationToken)
         {
-            var eventToDelete = await _eventRepository.GetByIdAsync(request.GalleryId);
+            var galleryToDelete = await _galleryRepository.GetByIdAsync(request.GalleryId);
 
-            if (eventToDelete == null)
+            if (galleryToDelete == null)
             {
                 throw new NotFoundException(nameof(Gallery), request.GalleryId);
             }
 
-            await _eventRepository.DeleteAsync(eventToDelete);
+            await _galleryRepository.DeleteAsync(galleryToDelete);
 
             return Unit.Value;
         }

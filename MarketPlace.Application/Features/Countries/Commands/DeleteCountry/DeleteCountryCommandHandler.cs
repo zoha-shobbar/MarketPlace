@@ -9,25 +9,25 @@ namespace MarketPlace.Application.Features.Countries.Commands.DeleteCountry
 {
     public class DeleteCountryCommandHandler : IRequestHandler<DeleteCountryCommand>
     {
-        private readonly IAsyncRepository<Country> _eventRepository;
+        private readonly IAsyncRepository<Country> _countryRepository;
         private readonly IMapper _mapper;
 
-        public DeleteCountryCommandHandler(IMapper mapper, IAsyncRepository<Country> eventRepository)
+        public DeleteCountryCommandHandler(IMapper mapper, IAsyncRepository<Country> countryRepository)
         {
             _mapper = mapper;
-            _eventRepository = eventRepository;
+            _countryRepository = countryRepository;
         }
 
         public async Task<Unit> Handle(DeleteCountryCommand request, CancellationToken cancellationToken)
         {
-            var eventToDelete = await _eventRepository.GetByIdAsync(request.CountryId);
+            var countryToDelete = await _countryRepository.GetByIdAsync(request.CountryId);
 
-            if (eventToDelete == null)
+            if (countryToDelete == null)
             {
                 throw new NotFoundException(nameof(Country), request.CountryId);
             }
 
-            await _eventRepository.DeleteAsync(eventToDelete);
+            await _countryRepository.DeleteAsync(countryToDelete);
 
             return Unit.Value;
         }
