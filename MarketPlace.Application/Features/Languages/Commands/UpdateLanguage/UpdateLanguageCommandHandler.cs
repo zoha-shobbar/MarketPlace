@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MarketPlace.Application.Contracts.Persistence;
+using MarketPlace.Application.Exceptions;
 using MarketPlace.Domain.Entities;
 using MediatR;
 using System.Threading;
@@ -28,7 +29,7 @@ namespace MarketPlace.Application.Features.Languages.Commands.UpdateLanguage
                 throw new NotFoundException(nameof(Language), request.LanguageId);
             }
 
-            var validator = new UpdateEventCommandValidator();
+            var validator = new UpdateLanguageCommandValidator();
             var validationResult = await validator.ValidateAsync(request);
 
             if (validationResult.Errors.Count > 0)

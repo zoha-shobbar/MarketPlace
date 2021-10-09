@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using MarketPlace.Application.Contracts.Persistence;
 using MarketPlace.Application.DTOs;
+using MarketPlace.Application.Exceptions;
 using MarketPlace.Domain.Entities;
 using MediatR;
 using System.Collections.Generic;

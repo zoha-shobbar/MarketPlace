@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MarketPlace.Application.DTOs;
+using System;
 using System.Collections.Generic;
 using static MarketPlace.Domain.Entities.PageAndPost;
 

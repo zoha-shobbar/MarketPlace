@@ -1,5 +1,8 @@
-﻿using AutoMapper;
+﻿
+
+using AutoMapper;
 using MarketPlace.Application.Contracts.Persistence;
+using MarketPlace.Application.DTOs;
 using MarketPlace.Domain.Entities;
 using MediatR;
 using System;
@@ -26,13 +29,13 @@ namespace MarketPlace.Application.Features.Countries.Queries.GetCountryDetail
 
         public async Task<CountryDetailViewModel> Handle(GetCountryDetailQuery request, CancellationToken cancellationToken)
         {
-            var @country = await _countryRepository.GetByIdAsync(request.Id);
-            var countryDetailDto = _mapper.Map<CountryDetailViewModel>(@country);
+            var country = await _countryRepository.GetByIdAsync(request.Id);
+            var countryDetailDto = _mapper.Map<CountryDetailViewModel>(country);
 
-            var currency= await _currencyRepository.GetByIdAsync((Guid)@country.CurrencyId);
-            var language= await _languageRepository.GetByIdAsync((Guid)@country.LanguageId);
+            var currency= await _currencyRepository.GetByIdAsync((Guid)country.CurrencyId);
+            var language= await _languageRepository.GetByIdAsync((Guid)country.LanguageId);
 
-            countryDetailDto.Currency= _mapper.Map<CurrencyDTO>(currency);
+            countryDetailDto.Currency = _mapper.Map<CurrencyDTO>(currency);
             countryDetailDto.Language= _mapper.Map<LanguageDTO>(language);
 
             return countryDetailDto;

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace MarketPlace.Application.Features.Currencies.Queries.GetCurrencyDetail
 
 {
-    public class GetCurrencyDetailHandler : IRequestHandler<GetMenuDetailQuery, CurrencyDetailViewModel>
+    public class GetCurrencyDetailHandler : IRequestHandler<GetCurrencyDetailQuery, CurrencyDetailViewModel>
     {
         private readonly IAsyncRepository<Country> _countryRepository;
         private IMapper _mapper;
@@ -19,7 +19,7 @@ namespace MarketPlace.Application.Features.Currencies.Queries.GetCurrencyDetail
             _mapper = mapper;
         }
 
-        public async Task<CurrencyDetailViewModel> Handle(GetMenuDetailQuery request, CancellationToken cancellationToken)
+        public async Task<CurrencyDetailViewModel> Handle(GetCurrencyDetailQuery request, CancellationToken cancellationToken)
         {
             var @currency = await _countryRepository.GetByIdAsync(request.Id);
             var currencyDetailDTO = _mapper.Map<CurrencyDetailViewModel>(currency);

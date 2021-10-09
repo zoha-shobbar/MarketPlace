@@ -1,5 +1,9 @@
-﻿using AutoMapper;
+﻿
+
+using AutoMapper;
+using FluentValidation;
 using MarketPlace.Application.Contracts.Persistence;
+using MarketPlace.Application.Exceptions;
 using MarketPlace.Domain.Entities;
 using MediatR;
 using System.Threading;
