@@ -1,4 +1,5 @@
-﻿using MarketPlace.Application.Features.Menues.Queries.GetMenuList;
+﻿using MarketPlace.Application.DTOs;
+using MarketPlace.Application.Features.Menues.Queries.GetMenuList;
 using System;
 
 namespace MarketPlace.Application.Features.Menues.Queries.GetMenueByType
@@ -14,6 +15,5 @@ namespace MarketPlace.Application.Features.Menues.Queries.GetMenueByType
         public string Description { get; set; }
 
         public PageAndPostDTO PageAndPost { get; set; }
-
     }
 }

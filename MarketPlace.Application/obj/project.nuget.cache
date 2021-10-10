@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TJtQsDuC92ez32fzDVft2etNpfACZVkUEV/qWTWtr307qViNdGsTBIopUiFI16ulN5Tmw0pZOuCxZ2nw+YsyTg==",
+  "dgSpecHash": "ARynvS96GSksvrFT+ghMS0LDrudcIOgx17A4ij0N9v+s/A00ZlOvwvjOJMlRjpO7lng15wqi83KGjuyopwHIcA==",
   "success": true,
   "projectFilePath": "E:\\Projects\\MarketPlace\\MarketPlace.Application\\MarketPlace.Application.csproj",
   "expectedPackageFiles": [
@@ -14,7 +14,10 @@
     "C:\\Users\\ZohaShobbar\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.0\\microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
     "C:\\Users\\ZohaShobbar\\.nuget\\packages\\microsoft.extensions.options\\3.0.0\\microsoft.extensions.options.3.0.0.nupkg.sha512",
     "C:\\Users\\ZohaShobbar\\.nuget\\packages\\microsoft.extensions.primitives\\3.0.0\\microsoft.extensions.primitives.3.0.0.nupkg.sha512",
-    "C:\\Users\\ZohaShobbar\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+    "C:\\Users\\ZohaShobbar\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
+    "C:\\Users\\ZohaShobbar\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\ZohaShobbar\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\ZohaShobbar\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

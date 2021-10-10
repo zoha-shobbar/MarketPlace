@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MarketPlace.Application.DTOs;
+using System;
 
 namespace MarketPlace.Application.Features.Countries.Queries.GetCountryDetail
 {

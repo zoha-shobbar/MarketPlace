@@ -1,7 +1,4 @@
-﻿
-
-using AutoMapper;
-using FluentValidation;
+﻿using AutoMapper;
 using MarketPlace.Application.Contracts.Persistence;
 using MarketPlace.Application.Exceptions;
 using MarketPlace.Domain.Entities;

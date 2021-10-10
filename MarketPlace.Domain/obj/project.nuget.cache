@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "7Jr+R6v3dJ0CUWaDLHOIJtNwOkBMvfY0yMv9bMHAhMJzr/KO6q6GSPSt66VidFOCWGuC96iiWJcQC1CXi9+vVg==",
+  "dgSpecHash": "GL50q+bH8EuRyAiK3HH9/rtymktHj6A9nrPMHVBYsFCReKXuDIWOimyo76clKIORenEXGQm1b6BDbjRCdhtQAw==",
   "success": true,
   "projectFilePath": "E:\\Projects\\MarketPlace\\MarketPlace.Domain\\MarketPlace.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ZohaShobbar\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\ZohaShobbar\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\ZohaShobbar\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
