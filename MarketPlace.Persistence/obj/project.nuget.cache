@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "DRHzhFM+teYV7oqd9b3dbe7X8QiD2wiAOO2Dqi8lpOCBpwDV4UZ3ROUVZRIEDsp39AmG893JTACXVDl2vcNrww==",
+  "success": true,
+  "projectFilePath": "E:\\Projects\\MarketPlace\\MarketPlace.Persistence\\MarketPlace.Persistence.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ZohaShobbar\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\ZohaShobbar\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\ZohaShobbar\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

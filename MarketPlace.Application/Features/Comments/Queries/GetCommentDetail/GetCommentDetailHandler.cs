@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using MarketPlace.Application.Contracts.Persistence;
+using MarketPlace.Application.DTOs;
 using MarketPlace.Domain.Entities;
 using MediatR;
 using System;
-using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 

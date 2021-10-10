@@ -1,0 +1,12 @@
+E:\Projects\MarketPlace\MarketPlace.Persistence\bin\Debug\net5.0\MarketPlace.Persistence.deps.json
+E:\Projects\MarketPlace\MarketPlace.Persistence\bin\Debug\net5.0\MarketPlace.Persistence.dll
+E:\Projects\MarketPlace\MarketPlace.Persistence\bin\Debug\net5.0\ref\MarketPlace.Persistence.dll
+E:\Projects\MarketPlace\MarketPlace.Persistence\bin\Debug\net5.0\MarketPlace.Persistence.pdb
+E:\Projects\MarketPlace\MarketPlace.Persistence\obj\Debug\net5.0\MarketPlace.Persistence.csproj.AssemblyReference.cache
+E:\Projects\MarketPlace\MarketPlace.Persistence\obj\Debug\net5.0\MarketPlace.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\MarketPlace\MarketPlace.Persistence\obj\Debug\net5.0\MarketPlace.Persistence.AssemblyInfoInputs.cache
+E:\Projects\MarketPlace\MarketPlace.Persistence\obj\Debug\net5.0\MarketPlace.Persistence.AssemblyInfo.cs
+E:\Projects\MarketPlace\MarketPlace.Persistence\obj\Debug\net5.0\MarketPlace.Persistence.csproj.CoreCompileInputs.cache
+E:\Projects\MarketPlace\MarketPlace.Persistence\obj\Debug\net5.0\MarketPlace.Persistence.dll
+E:\Projects\MarketPlace\MarketPlace.Persistence\obj\Debug\net5.0\ref\MarketPlace.Persistence.dll
+E:\Projects\MarketPlace\MarketPlace.Persistence\obj\Debug\net5.0\MarketPlace.Persistence.pdb
